@@ -2,7 +2,7 @@ R="\033[31;159m"
 
 figlet -t -f slant '*' Privyet blyat! '*'
 
-echo $R"You're off to break some more shit I assume, m'lord..? \n \nYes, yes you are... Whelp,$
+echo $R"You're off to break some more shit I assume, m'lord..? \n \nYes, yes you are... Whelp, carry on then!" | cowthink -f tux
 
 # Vars
         HISTFILE=~/.zsh_history
@@ -13,7 +13,7 @@ echo $R"You're off to break some more shit I assume, m'lord..? \n \nYes, yes you
 # Aliases
 
 alias clock="watch -n1 'date '+%D%n%T'|figlet -k'"
-alias ttfb='curl -o /dev/null -w "Connect: %{time_connect} TTFB: %{time_starttransfer} Total t$
+alias ttfb='curl -o /dev/null -w "Connect: %{time_connect} TTFB: %{time_starttransfer} Total time: %{time_total} \n"'
 
 alias nsts="echo ns1.tsohost.co.uk
              echo ns2.tsohost.co.uk
@@ -51,7 +51,7 @@ alias h="host"
 alias wh="whois"
 alias hostf="sudo nano /etc/hosts"
 alias editor="sudo nano ~/.zshrc"
-alias w='/home/sasha/bin/w'
+alias w="/home/sasha/bin/w"
 
 #Functions
         stty -ixon
@@ -79,4 +79,3 @@ if [[ "${terminfo[kcud1]}" != "" ]]; then
 fi
 
 source ~/dotfiles-final/zsh/prompt.sh
-
